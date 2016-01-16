@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 
 #Customs
 
+#design
+gem 'bootstrap-sass'
+
 group :development, :test do
   gem 'rspec-rails'
 end
