@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h1 class="title_font">
   <%= @post.title %>
-</p>
+</h1>
+<hr>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<p class="post_font">
+    <%= @post.content %>
+</p>
+<hr>
+<span style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"></span><%= link_to 'Back', posts_path, {class: "content_font"} %>

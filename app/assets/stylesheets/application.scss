@@ -16,3 +16,90 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: 'Blog';
+  src:url('../assets/amsterdamtangram.regular.ttf');
+}
+.glyphicon {
+  margin: auto;
+  display: inline-block !important;
+  font-family: 'Content' !important;
+  float: right;
+
+
+}
+#nav_column {
+  height: 100vw;
+}
+.fonty_text
+{
+  font-family: 'Blog';
+  font-size: 10vw;
+}
+
+@font-face {
+  font-family: 'Title';
+  src:url('../assets/Semplicita Bold.otf');
+
+}
+.title_font
+{
+  font-size: 9vw;
+  font-family: 'Title';
+}
+@font-face {
+  font-family: 'Content';
+  src:url('../assets/Semplicita Light.otf');
+}
+.content_font
+{
+  font-family: 'Content';
+  font-size: 3vw;
+}
+.post_font
+{
+  font-family: 'Content';
+  font-size: 4vw;
+  line-height: 4.5vw;
+
+}
+.content_font:before
+{
+  font-family: 'Glyphicons Halflings' !important;
+}
+a:visited{
+
+}
+a:hover{
+  background-color: white;
+  color: black;
+
+
+}
+@media only screen and (min-width: 501px) {
+    .col-xs-12 {
+         display: none;
+     }
+ }
+
+
+@media only screen and (max-width: 500px) {
+  .content_font
+  {
+    font-size: 9vh;
+    font-family: 'Content';
+  }
+  .post_font{
+    font-size: 8.5vw;
+    line-height: 9.5vw;
+  }
+  .col-xs-3 {
+       display: none;
+   }
+   .col-xs-9 {
+        display: none;
+    }
+    .col-xs-12 {
+         display: block;
+     }
+ }

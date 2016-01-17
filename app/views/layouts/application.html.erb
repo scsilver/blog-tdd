@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="col-xs-3">
+      <div class="row">
+      <h1 class="fonty_text" style="float: right;">SS</h1>
+      </div>
+      <br>
+      <div class="row" style="min-height: 3vh">
+        <span stlye="float: right;" class="glyphicon glyphicon glyphicon-fire content_font">Scott Silverstein</span>
+      </div>
+      <div class="row" style="min-height: 3vh">
+        <span stlye="float: right;" class="glyphicon glyphicon glyphicon-file content_font"><%= link_to "Github", "http://www.github.com/scsilver",:target => "_blank" %></span>
+      </div>
 
-<%= yield %>
 
+    </div>
+    <div class="col-xs-9" style="overflow-y: scroll;height: 100vh;">
+      <div class="container" style="margin: auto; width: 80%;padding-top: 10em;">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="col-xs-12" style="overflow-y: scroll;height: 100vh;">
+        <%= yield %>
+    </div>
+  </div>
 </body>
 </html>

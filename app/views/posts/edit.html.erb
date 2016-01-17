@@ -1,6 +1,8 @@
-<h1>Editing Post</h1>
+<h1 class="title_font">Edit Post</h1>
+<hr>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Show', @post %>
+
+<span style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"><%= link_to 'Back', posts_path %></span>
