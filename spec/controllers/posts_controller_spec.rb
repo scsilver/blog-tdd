@@ -3,13 +3,14 @@ require 'rails_helper'
 RSpec.describe PostsController, type: :controller do
   context "POST create" do
     context 'with valid attributes' do
+
       it 'creates the post' do
         post :create, post: attributes_for(:post)
         expect(Post.count).to eq(1)
       end
 
       it 'redirects to the "show" action for the new post' do
-        post :create, post: attributes_for(:ppost)
+        post :create, post: attributes_for(:post)
         expect(response).to redirect_to Post.first
       end
     end
@@ -29,27 +30,29 @@ RSpec.describe PostsController, type: :controller do
       end
     end
   end
+  context "GET edit" do
+    it "finds post" do
+      post = Post.create
+
+      params = { id: 1 }
+
+      get :edit, params
+
+      expect(response).to have_http_status(:success) # 200
+      expect(response).to redirect_to post_path
+    end
+    it "renders edit" do
+
+    params = { id: 1 }
+
+    get :edit, params
+    end
+
+  end
+
 end
 
-# context "GET edit" do
-#   it "finds post" do
-#     post = Post.create
-#
-#     params = { id: 1 }
-#
-#     get :edit, params
-#
-#     expect(response).to have_http_status(:success) # 200
-#     expect(response).to redirect_to post_path
-#   end
-#   it "renders edit" do
-#
-#   params = { id: 1 }
-#
-#   get :edit, params
-#   end
-#
-# end
+
 # context "GET new" do
 #   it "makes new @post" do
 #     get :new
