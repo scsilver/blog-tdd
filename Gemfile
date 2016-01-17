@@ -5,7 +5,8 @@ source 'https://rubygems.org'
 #Customs
 #blog features
 gem 'redcarpet'
-
+#code snippits
+gem 'coderay'
 #design
 gem 'bootstrap-sass'
 
