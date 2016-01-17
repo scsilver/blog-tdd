@@ -9,7 +9,7 @@ feature 'Using blog,' do
 
       fill_in 'Content', with: '#Content foo bar'
 
-      click_button 'Submit'
+      click_button 'Create Post'
     end
 
     scenario 'User can add post.' do
@@ -17,7 +17,7 @@ feature 'Using blog,' do
     end
 
     scenario 'User can view post.' do
-      click_link 'View Post'
+      visit '/'
       expect(page).to have_content('New Blog Post')
       expect(page).to have_content('#Content foo bar')
     end
@@ -29,7 +29,9 @@ feature 'Using blog,' do
 
       fill_in 'Content', with: 'stuff'
 
-      click_button 'Submit'
+      click_button 'Create Post'
+
+      visit '/'
 
       expect(page).to have_content('New Blog Post')
       expect(page).to have_content('Second')

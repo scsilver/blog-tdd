@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-describe Post do
-
+RSpec.describe Post, type: :model do
 
   it "has a valid factory" do
 
