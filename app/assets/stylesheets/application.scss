@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Blog';
-  src:url('../assets/amsterdamtangram.regular.ttf');
+  src:font-url('../assets/amsterdamtangram.regular.ttf');
 }
 .glyphicon {
   margin: auto;
@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'Title';
-  src:url('../assets/Semplicita Bold.otf');
+  src:font-url('../assets/Semplicita Bold.otf');
 
 }
 .title_font
@@ -49,7 +49,7 @@
 }
 @font-face {
   font-family: 'Content';
-  src:url('../assets/Semplicita Light.otf');
+  src:font-url('../assets/Semplicita Light.otf');
 }
 .content_font
 {
