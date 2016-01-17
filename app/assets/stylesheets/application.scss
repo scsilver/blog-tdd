@@ -19,6 +19,7 @@
 @font-face {
   font-family: 'Blog';
   src:font-url("amsterdamtangram.regular.ttf");
+
 }
 .glyphicon {
   margin: auto;
@@ -83,7 +84,13 @@ a:hover{
  }
 
 
-@media only screen and (max-width: 500px) {
+
+ @media only screen and (-moz-min-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (max-width: 500px){
+  /*use CSS to swap out your low res images with high res ones here*/
   .content_font
   {
     font-size: 9vh;
