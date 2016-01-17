@@ -10,6 +10,9 @@ gem 'coderay'
 #design
 gem 'bootstrap-sass'
 
+gem 'factory_girl_rails'
+
+
 group :development, :test do
   gem 'rspec-rails'
 end
@@ -17,7 +20,6 @@ end
 group :test do
   gem 'capybara'
 
-  gem 'factory_girl_rails'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
