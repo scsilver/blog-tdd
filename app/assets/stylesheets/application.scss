@@ -82,7 +82,10 @@ a:hover{
          display: none;
      }
  }
+ .navbar{
+   display: none;
 
+ }
 
 
  @media only screen and (-moz-min-device-pixel-ratio: 2),
@@ -91,9 +94,13 @@ a:hover{
         only screen and (min-device-pixel-ratio: 2)
       {
   /*use CSS to swap out your low res images with high res ones here*/
+  .navbar{
+    display: block;
+
+  }
   .content_font
   {
-    font-size: 9vh;
+    font-size: 30px;
     font-family: 'Content';
   }
   .post_font{
