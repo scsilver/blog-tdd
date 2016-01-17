@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 
 #Customs
+#blog features
+gem 'redcarpet'
 
 #design
 gem 'bootstrap-sass'
