@@ -21,8 +21,8 @@ RSpec.describe Post, type: :model do
 
     # Basic validations
     # Presence
-    #it { expect(post).to validate_presence_of(:title) }
-    #it { expect(post).to validate_presence_of(:content) }
+    it { expect(post).to validate_presence_of(:title) }
+    it { expect(post).to validate_presence_of(:content) }
 
     # Uniquenes
     #it { expect(post).to validate_uniqueness_of(:tile) }
