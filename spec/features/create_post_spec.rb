@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-feature 'blog post' do
-  feature 'user can create blog post' do
+feature 'Using blog,' do
+  feature 'user can create blog post.' do
     background do
       visit '/'
       click_link 'New Post'
@@ -12,17 +12,17 @@ feature 'blog post' do
       click_button 'Submit'
     end
 
-    scenario 'User can add post' do
+    scenario 'User can add post.' do
       expect(page).to have_content('New Blog Post')
     end
 
-    scenario 'User can view post' do
+    scenario 'User can view post.' do
       click_link 'View Post'
       expect(page).to have_content('New Blog Post')
       expect(page).to have_content('#Content foo bar')
     end
 
-    scenario 'User can view all posts titles' do
+    scenario 'User can view all posts titles.' do
       visit '/'
       click_link 'New Post'
       fill_in 'Title', with: 'Second'
@@ -34,7 +34,6 @@ feature 'blog post' do
       expect(page).to have_content('New Blog Post')
       expect(page).to have_content('Second')
     end
-
 
   end
 
