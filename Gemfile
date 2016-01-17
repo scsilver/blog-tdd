@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'pry'
 #Customs
 #blog features
 gem 'redcarpet'
