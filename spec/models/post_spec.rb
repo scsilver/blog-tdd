@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Post, type: :model do
+describe Post do
 
 
   it "has a valid factory" do
@@ -8,6 +8,7 @@ RSpec.describe Post, type: :model do
     expect(build(:post)).to be_valid
 
   end
+  let(:post) { build(:post) }
 
   describe "attribute accessors" do
     #accessors
@@ -18,11 +19,11 @@ RSpec.describe Post, type: :model do
   end
 
   describe "ActiveModel validations" do
-
     # Basic validations
     # Presence
     it { expect(post).to validate_presence_of(:title) }
     it { expect(post).to validate_presence_of(:content) }
+
 
     # Uniquenes
     #it { expect(post).to validate_uniqueness_of(:tile) }
