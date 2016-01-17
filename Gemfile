@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 gem 'pry'
 #Customs
+
+gem 'shoulda-matchers'
+
 #blog features
 gem 'redcarpet'
 #code snippits
