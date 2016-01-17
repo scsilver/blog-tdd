@@ -19,39 +19,38 @@ RSpec.describe PostsController, type: :controller do
       it 'does not create the post' do
         post :create, post: attributes_for(:post, title: nil)
         post :create, post: attributes_for(:post, content: nil)
+
         expect(Post.count).to eq(0)
       end
 
-      it 're-renders the "new" view' do
-        post :create, post: attributes_for(:post, title: nil)
-        post :create, post: attributes_for(:post, conttent: nil)
 
-        expect(response).to render_template :new
-      end
     end
   end
-  context "GET edit" do
-    it "finds post" do
-      post = Post.create
-
-      params = { id: 1 }
-
-      get :edit, params
-
-      expect(response).to have_http_status(:success) # 200
-      expect(response).to redirect_to post_path
-    end
-    it "renders edit" do
-
-    params = { id: 1 }
-
-    get :edit, params
-    end
-
-  end
-
 end
 
+# it 're-renders the "new" view' do
+#   post :create, post: attributes_for(:post, title: nil)
+#   post :create, post: attributes_for(:post, conttent: nil)
+#   expect(response).to render_template :new
+# end
+
+# context "GET edit" do
+#   it "finds post" do
+#     post = Post.create
+#
+#     params = { id: 1 }
+#
+#     get :edit, params
+#
+#     expect(response).to have_http_status(:success) # 200
+#     expect(response).to redirect_to post_path
+#   end
+#   it "renders edit" do
+#
+#   params = { id: 1 }
+#
+#   get :edit, params
+#   end
 
 # context "GET new" do
 #   it "makes new @post" do
