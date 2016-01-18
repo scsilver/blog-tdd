@@ -23,6 +23,7 @@
 }
 .glyphicon {
   margin: auto;
+  margin-top: .1em;
   display: inline-block !important;
   font-family: 'Content' !important;
   float: right;
@@ -45,6 +46,8 @@
 }
 .title_font
 {
+  color: #456280;
+
   font-size: 9vw;
   font-family: 'Title';
 }
@@ -63,21 +66,31 @@
 }
 .post *
 {
+  color: #41506F;
+
+  font-family: 'Content';
+}
+.post p
+{
+  font-size: 1.5em;
+  line-height: 2em;
   font-family: 'Content';
 }
 .post h2
 {
   font-family: 'Medium';
+  font-size: 3em;
+
 }
 .post h1
 {
   font-family: 'Medium';
-  font-size: 3.5em;
+  font-size: 4em;
 }
 .post * li
 {
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 2em;
+  line-height: 2.5em;
 
 }
 .post_font
@@ -91,12 +104,18 @@
 {
   font-family: 'Glyphicons Halflings' !important;
 }
+a{
+  color: #6A4E65;
+  transition: color 2s;
+
+}
 a:visited{
+  color: #BC546D;
 
 }
 a:hover{
   background-color: white;
-  color: black;
+  color: #F54E62;
 
 
 }

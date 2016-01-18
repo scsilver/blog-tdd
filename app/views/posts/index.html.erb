@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="title_font">Latest Posts</h1>
+<h1 id="responsive_headline" class="title_font">Latest Posts</h1>
 <hr>
 
 <% @posts.each do |post| %>
@@ -8,6 +8,9 @@
 
 <%end%>
 <div class="row">
-<span class="glyphicon glyphicon glyphicon-chevron-right content_font"></span><%= link_to 'New Post', new_post_path, {class: "content_font", style: "float: right;"}%>
+<span class="glyphicon glyphicon glyphicon-chevron-right content_font"></span><%= link_to 'New Post', new_post_path, {class: "title_font", style: "float: right;font-size: 3vw;"}%>
 
 </div>
+<script>
+jQuery("#responsive_headline").fitText(.6);
+</script>
