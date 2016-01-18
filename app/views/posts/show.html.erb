@@ -4,12 +4,5 @@
   <%= @post.title %>
 </h1>
 <hr>
-
-
-<p class="post_font">
-  <%= markdown(@post.content) %>
-
-
-</p>
-<hr>
+  <%= ('<div class="post" style="font-family: Content;">'+markdown(@post.content)+  '</div>').html_safe %>
 <span style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"></span><%= link_to 'Back', posts_path, {class: "content_font"} %>

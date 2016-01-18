@@ -52,10 +52,33 @@
   font-family: 'Content';
   src:font-url("Semplicita_Light.otf");
 }
+@font-face {
+  font-family: 'Medium';
+  src:font-url("Semplicita_Medium.otf");
+}
 .content_font
 {
   font-family: 'Content';
   font-size: 3vw;
+}
+.post *
+{
+  font-family: 'Content';
+}
+.post h2
+{
+  font-family: 'Medium';
+}
+.post h1
+{
+  font-family: 'Medium';
+  font-size: 3.5em;
+}
+.post * li
+{
+  font-size: 1.5em;
+  line-height: 2em;
+
 }
 .post_font
 {
