@@ -3,11 +3,11 @@
 var ready = function() {
 
   var getMax = function() {
-    return $('.col-xs-10')[0].scrollHeight - $(window).height();
+    return $('.col-xs-9')[0].scrollHeight - $(window).height();
   }
 
   var getValue = function() {
-    return $('.col-xs-10').scrollTop();
+    return $('.col-xs-9').scrollTop();
   }
 
   if ('max' in document.createElement('progress')) {
@@ -19,7 +19,7 @@ var ready = function() {
       max: getMax()
     });
 
-    $('.col-xs-10').on('scroll', function() {
+    $('.col-xs-9').on('scroll', function() {
       // On scroll only Value attr needs to be calculated
 
       progressBar.attr({
@@ -55,7 +55,7 @@ var ready = function() {
       });
     }
 
-    $('.col-xs-10').on('scroll', setWidth);
+    $('.col-xs-9').on('scroll', setWidth);
 
     $(window).on('resize', function() {
       // Need to reset the Max attr
@@ -100,7 +100,7 @@ var ready = function() {
     $(this).preventDefault();
   });
 
-  $('.col-xs-10').on('scroll', function() {
+  $('.col-xs-9').on('scroll', function() {
 
     maxAttr = $('#progressBar').attr('max');
     valueAttr = $('#progressBar').attr('value');
