@@ -7,7 +7,9 @@
 
 
 <p class="post_font">
-    <%= @post.content %>
+  <%= markdown(@post.content) %>
+
+
 </p>
 <hr>
 <span style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"></span><%= link_to 'Back', posts_path, {class: "content_font"} %>
