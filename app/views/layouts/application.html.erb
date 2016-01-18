@@ -22,9 +22,9 @@
           <ul style="width: 94%;float: right;margin-bottom: .3em;position: absolute; bottom: 0;">
             <div style="margin:auto;">
               <div class="row" style="min-height: 3vh">
-                <span stlye="float: right;display: inline-block;" class="glyphicon glyphicon glyphicon-file content_font"><%= link_to "Github", "http://www.github.com/scsilver",:target => "_blank" %></span>
+                <span stlye="float: right;display: inline-block;" class="glyphicon glyphicon glyphicon-file content_font"></span><%= link_to "Github", "http://www.github.com/scsilver",:target => "_blank" %>
 
-                <span style="padding-right: 1em;float: right;display: inline-block;" class="glyphicon glyphicon glyphicon-fire content_font">Scott Silverstein</span>
+                <span style="padding-right: 1em;float: right;display: inline-block;" class="glyphicon glyphicon glyphicon-fire content_font"><%= link_to "Scott Silverstein", "https://drive.google.com/file/d/0BxXbdTNXzKX5OENHVFB0Tm8zSmM/view?usp=sharing",:target => "_blank" %></span>
             </li>
           </ul>
         </div>
@@ -38,21 +38,25 @@
 
 
   <div class="container-fluid">
-    <div class="col-xs-2">
+    <div class="col-xs-3">
       <div class="row">
         <%= link_to "SS", root_path, {class: "fonty_text", style: "font-size: 30vw; line-height:32vw; float: right;"} %>
       </div>
       <br>
       <div class="row" style="min-height: 3vh">
-        <span style="float: right;" class="glyphicon glyphicon glyphicon-fire content_font">Scott Silverstein</span>
+        <span style="float: right;" class="glyphicon glyphicon glyphicon-envelope content_font"><%= link_to "Scott Silverstein", "mailto:scsilver.umd@gmail.com",{ :target => "_blank", class: "content_font", style: "float: right;margin-left: .1em;font-size: 3vw;"}  %></span>
       </div>
       <div class="row" style="min-height: 3vh">
-        <span style="float: right;" class="glyphicon glyphicon glyphicon-file content_font"><%= link_to "Github", "http://www.github.com/scsilver",:target => "_blank" %></span>
+        <span style="float: right;" class="glyphicon glyphicon glyphicon-file content_font"><%= link_to "Resume", "https://drive.google.com/file/d/0BxXbdTNXzKX5OENHVFB0Tm8zSmM/view?usp=sharing",{ :target => "_blank", class: "content_font", style: "float: right;font-size: 3vw;"}  %></span>
       </div>
+      <div class="row" style="min-height: 3vh">
+        <span style="float: right;" class="glyphicon glyphicon glyphicon glyphicon-console content_font"><%= link_to "Github", "http://www.github.com/scsilver", { :target => "_blank", class: "content_font", style: "float: right;margin-left: .1em;font-size: 3vw;"} %></span>
+      </div>
+
 
 
     </div>
-    <div class="col-xs-10" style="overflow-y: scroll;height: 100vh;">
+    <div class="col-xs-9" style="overflow-y: scroll;height: 100vh;">
       <div class="container" style="margin: auto; width: 80%;padding-top: 10vw;">
         <%= yield %>
       </div>
