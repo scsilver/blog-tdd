@@ -50,6 +50,9 @@ pre * {
   font-size: 9vw;
   font-family: 'Title';
 }
+#mobile #back_links {
+  font-size: 9vw !important;
+}
 @font-face {
   font-family: 'Content';
   src: font-url("Semplicita_Light.otf");
@@ -110,10 +113,24 @@ a:hover {
 .navbar {
   display: none;
 }
+#back_links{
+  display: none !important;
+}
+#front_links{
+  display: block  !important;
+  font-family: 'Title'
+}
 @media only screen and (-moz-min-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
+  #back_links{
+    display: block !important;
+    font-family: 'Title'
+
+  }
+  #front_links{
+    display: none !important;  }
   /*use CSS to swap out your low res images with high res ones here*/
   .navbar {
     display: block;

@@ -18,7 +18,8 @@
 
   <%= ('<div class="post" style="font-family: Content;">'+markdown(@post.content)+  '</div>').html_safe %>
 </article>
-<span style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"></span><%= link_to 'Back', posts_path, {class: "title_font", style: "float: left;font-size: 3vw;"} %>
+<span id="front_links" style="font-size:3vw;float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"><%= link_to 'Back', posts_path, {id: "front_links", class: "title_font", style: "margin-top: .1em;float: right;font-size: 3vw;"} %></span>
+<span id="back_links" style="float: left;"class="glyphicon glyphicon glyphicon-chevron-left content_font"><%= link_to 'Back', posts_path, {id: "back_links", class: "title_font", style: "margin-top: .1em;float: right;font-size: 3vw;"} %></span>
 
 <script>
 jQuery("#responsive_headline").fitText(.6);
