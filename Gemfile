@@ -12,9 +12,13 @@ gem 'redcarpet'
 gem 'coderay'
 #design
 gem 'bootstrap-sass'
+
 gem 'fittextjs_rails'
 
 gem 'factory_girl_rails'
+
+gem 'jquery_mobile_rails'
+
 
 
 group :development, :test do

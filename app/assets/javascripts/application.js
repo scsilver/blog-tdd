@@ -13,6 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery.mobile
 //= require turbolinks
 //= require fittext
 //= require_tree .
